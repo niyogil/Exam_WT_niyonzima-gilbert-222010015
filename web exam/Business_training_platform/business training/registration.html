@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Business Strategy Training platform</title>
+    <!-- Add CSS links for styling -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            background-color: #da850f;
+    background-size: cover; 
+    background-position: center; 
+        }
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #0b0b0b;
+    border-radius: 5px;
+    background-color: rgb(215, 10, 123);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+button {
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 150px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+h2{
+    align-items: center;
+    font-size: 50px;
+    align-content: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+       
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="navbar-brand">VBSTP</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="instructors_login.php">Instructor</a></li>
+          <li><a href="admin_login.php">Admin</a></li>
+          <li class="dropdown">
+            <a href="login.html">Login &#9662;</a>
+            <div class="dropdown-content">
+              <a href="registration.html">Register</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+        <h2>REGISTRATION   PAGE</h2>
+        <form action="register.php" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <label for="photo">Profile Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+          </div>
+          <button type="submit" name="submit">Register</button>
+          <a href="login.html" class="nav-item nav-link" style="color: rgb(255, 0, 136);">Login Here</a>
+        </form>
+      </div>
+   
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container2">
+        <div class="left-part">
+          <p class="mb-0">Designed by Trained Business Experts</p>
+          <p class="mb-0">UR, RN1-HUYE</p>
+          <p class="mb-0">contact@businessplatform.com</p>
+          <p class="mb-0">+250 787109054</p>
+        </div>
+        <div class="right-part">
+          <p class="mb-0">© 2024 Business Strategy Platform. All rights reserved.</p>
+          <p class="mb-0">Designed by: <a href="#" target="_blank" class="fw-bold">Gilbert</a></p>
+          <p class="mb-0">Distributed by: <a href="#" target="_blank" class="fw-bold">Gilbert</a></p>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    <!-- Add JavaScript links if needed -->
+    <script src="script.js"></script>
+</body>
+
+</html>

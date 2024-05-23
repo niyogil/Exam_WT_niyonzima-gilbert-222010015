@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Virtual Business Strategy Training Platform</title>
+    <!-- Add CSS links for styling -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS styles */
+        .container {
+            max-width: 800px;
+            background-image: url('image/22.jpg');
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(225, 50, 50, 0.1);
+        }
+
+        .contact-cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #7d0a0a;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(127, 139, 155, 0.1);
+            padding: 20px;
+            width: calc(33.33% - 20px);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            font-size: 20px;
+            color: #22d355;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #f6d8d8;
+            margin-bottom: 15px;
+        }
+
+        /* Styles for links with a yellow background */
+        .navbar a.yellow-background {
+            background-color: grey;
+            color: rgb(4, 122, 29); /* Ensure text is readable against the yellow background */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a.yellow-background:hover {
+            background-color: #e71a95; /* Darker yellow on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="navbar-brand">VBSTP</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="yellow-background">Home</a></li>
+                <li><a href="about.html" class="yellow-background">About Us</a></li>
+                <li><a href="contact.html" class="yellow-background">Contact us</a></li>
+                <li><a href="instructors_login.php" class="yellow-background">Instructor</a></li>
+                <li><a href="admin_login.php" class="yellow-background">Admin</a></li>
+                <li><a href="resources.php" class="yellow-background">Resources</a></li>
+                <li class="dropdown">
+                    <a href="login.html" class="yellow-background">Login &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="registration.html" class="yellow-background">Register</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+        <div class="container">
+            <h1 style="text-align: center;">Contact Us</h1>
+            <div class="contact-cards">
+                <div class="card">
+                    <h2>Customer Support</h2>
+                    <p>If you have any questions or need assistance, our customer support team is here to help you.</p>
+                    <p>Email: momo@gmail.com</p>
+                    <p>Phone: 07896543</p>
+                </div>
+                <div class="card">
+                    <h2>Technical Support</h2>
+                    <p>For technical issues or inquiries regarding our platform, please contact our technical support team.</p>
+                    <p>Email: Rugemana@gmail.com</p>
+                    <p>Phone: +1 0789654591</p>
+                </div>
+                <div class="card">
+                    <h2>Business Inquiries</h2>
+                    <p>For business partnerships, collaborations, or other inquiries, please contact our business development team.</p>
+                    <p>Email: lourien@gmail.com</p>
+                    <p>Phone: 0723457892</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container2">
+            <div class="left-part">
+                <p class="mb-0">Designed by Virtual Business Strategy Training Platform Team</p>
+                <p class="mb-0">Address: 123 Business Street, City, Country</p>
+                <p class="mb-0">Email: iwobi@gmail.com</p>
+                <p class="mb-0">Phone: 0784567890</p>
+            </div>
+            <div class="right-part">
+                <p class="mb-0">© 2024 Virtual Business Strategy Training Platform. All rights reserved.</p>
+                <p class="mb-0">Designed by: <a href="#" target="_blank" class="fw-bold">Gilbert</a></p>
+                <p class="mb-0">Distributed by: <a href="#" target="_blank" class="fw-bold">Gilbert</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add JavaScript links if needed -->
+    <script src="script.js"></script>
+</body>
+
+</html>

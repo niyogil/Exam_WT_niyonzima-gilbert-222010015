@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIRTUAL BUSINESS STRATEGY TRAINING PLATFORM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10;
+            padding: 0;
+            background-color: #0a090a;
+            color: #333;
+            background-image: url('image/a.webp'); /* Correct the image file path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1em;
+        }
+
+        .nav-links a {
+            color: rgb(234, 21, 138);
+            text-decoration: none;
+        }
+
+        .nav-links .dropdown {
+            position: relative;
+        }
+
+        .nav-links .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(190, 85, 85);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .nav-links .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .nav-links .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .nav-links .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .hero-section {
+            background-image: url('image/a.jpg'); /* Correct the image file path */
+            background-size: contain; /* Adjust this value to control the size of the background image */
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-section .cta-form input {
+            padding: 0.5em;
+            margin-right: 1em;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .hero-section .cta-form button {
+            padding: 0.5em;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero-section .cta-form button:hover {
+            background-color: #555;
+        }
+
+        .features-section {
+            padding: 40px 0;
+            background-color: #f5d170;
+            text-align: center;
+        }
+
+        .feature-boxes {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .feature {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature i {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .about-section {
+            padding: 40px 0;
+            background-image: url('image/e.jpg'); /* Correct the image file path */
+            text-align: center;
+        }
+
+        .about-section .btn {
+            padding: 10px 20px;
+            background-color: #333;
+            color: rgb(242, 12, 12);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .about-section .btn:hover {
+            background-color: #555;
+        }
+
+        .category-section {
+            padding: 40px 0;
+            background-color :#e8dc7e; 
+        }
+
+        .category-boxes {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .category {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .category:hover {
+            transform: translateY(-10px);
+        }
+
+        .category i {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: rgb(249, 252, 245);
+            padding: 20px 0;
+        }
+
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer .left-part p,
+        .footer .right-part p {
+            margin: 0;
+        }
+
+        .footer a {
+            color: rgb(25, 214, 113);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="navbar-brand">VBSTP</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="instructors_login.php">Instructor</a></li>
+                <li><a href="admin_login.php">Admin</a></li>
+                <li class="dropdown">
+                    <a href="login.html">Login &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="registration.html">Register</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Business Strategy Training Platform</h1>
+                <p>Start your journey to Business Strategy today!</p>
+                <div class="cta-form">
+                    <input type="text" placeholder="Enter your email address">
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="feature-boxes">
+                <div class="feature">
+                    <i class="fa fa-users"></i>
+                    <h2>Expert Instructors</h2>
+                    <p>Learn from experienced professionals in the field.</p>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-book"></i>
+                    <h2>Wide Range of Courses</h2>
+                    <p>Explore various topics tailored to your needs.</p>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-certificate"></i>
+                    <h2>Free Certifications</h2>
+                    <p>Earn certificates upon course completion at no extra cost.</p>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-smile-o"></i>
+                    <h2>Happy Members</h2>
+                    <p>Join our community of satisfied learners.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>Discover our mission and the benefits of joining our platform.</p>
+                <a href="about.html" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="category-section">
+        <div class="container">
+            <div class="category-boxes">
+                <div class="category">
+                    <i class="fa fa-money"></i>
+                    <h3>Personal Finance</h3>
+                    <p>Explore courses to know how you run your business.</p>
+                </div>
+                <div class="category">
+                    <i class="fa fa-line-chart"></i>
+                    <h3>Business Strategies</h3>
+                    <p>Learn how a company will achieve its goals and improve its competitive position in the market. It includes decisions on resource allocation, market targeting, and the approach to achieving sustainable growth and profitability.</p>
+                </div>
+                <div class="category">
+                    <i class="fa fa-piggy-bank"></i>
+                    <h3>Types of Business Strategy</h3>
+                    <p>Know some kinds of business strategies like focus, growth, innovation, differentiation, etc.</p>
+                </div>
+                <div class="category">
+                    <i class="fa fa-credit-card"></i>
+                    <h3>SWOT Analysis</h3>
+                    <p>Learn how you can manage your strengths, weaknesses, opportunities, and threats in the journey of business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="left-part">
+                <p class="mb-0">Designed by Trained Business Experts</p>
+                <p class="mb-0">UR, RN1-HUYE</p>
+                <p class="mb-0">contact@businessplatform.com</p>
+                <p class="mb-0">+250 787109054</p>
+            </div>
+            <div class="right-part">
+                <p class="mb-0">© 2024 Business Strategy Platform. All rights reserved.</p>
+                <p class="mb-0">Designed by: <a href="#" target="_blank" class="fw-bold">Gilbert</a></p>
+                <p class="mb-0">Distributed by: <a href="#" target="_blank" class="fw-bold">Gilbert</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add JavaScript links if needed -->
+    <script src="script.js"></script>
+</body>
+
+</html>
